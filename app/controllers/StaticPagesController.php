@@ -3,6 +3,9 @@ class StaticPagesController extends ApplicationController
 {
     public function start()
     {
-        return $this->render();
+        $catalog_name = $this->params['catalog'] ?? Catalog::default() ?? '';
+        $catalog = new Catalog($catalog_name);
+
+        return $this->render([ 'catalog' => $catalog ]);
     }
 }
