@@ -61,7 +61,7 @@ body {
 
 #content .images .image {
     display: inline-flex;
-    flex: 0 0 100%;
+    flex: 0 0 auto;
     justify-content: center;
     align-items: center;
     height: 200px;
@@ -75,28 +75,20 @@ body {
 }
 
 @media only screen and (min-width: 576px) {
-    #content .images .image {
-        flex: 0 0 50%;
-    }
+
 }
 
 @media only screen and (min-width: 768px) {
-    #content .images .image {
-        height: 240px;
-    }
+
 }
 
 @media only screen and (min-width: 992px) {
-    #content .images .image {
-        flex: 0 0 33.333333333333333%;
-    }
+
 }
 
 @media only screen and (min-width: 1200px) {
     #content .images .image {
-        max-width: 470px;
-        height: 200px;
-        flex: 0 0 25%;
+        height: 260px;
     }
 }
 
